@@ -58,6 +58,9 @@ FROM employees
 GROUP BY department_id) TEMP
 ON e.department_id=TEMP.department_id;
 
+
+
+
 -- 6. 월별 입사자 수를 조회하되, 입사자 수가 10명 이상인 월만 출력하시오. ******
 SELECT MONTH(hire_date) 입사월, COUNT(employee_id) 입사자수
 FROM employees
